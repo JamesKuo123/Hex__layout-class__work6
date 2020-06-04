@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+
+    <!-- icon cdn-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/all.css">
+</head>
+<body>
+    <div class="layout notIndex">
+        <div class="layout__header container">
+            <a href="#" class="mobile__hamburger d-lg-none material-icons" id="openMobileHeaderMenu" onclick="show()">
+                menu
+            </a>
+            <h1 class="logo">
+                <a href="index.html">
+                    CRAFTsMAN
+                </a>
+            </h1>
+            <a href="#" class="mobile__cart d-lg-none material-icons">
+                shopping_cart
+            </a>
+            <div class="mobile__headerMenu d-lg-none" id="mobileHeaderMenu">
+                <div class="container">
+                    <div class="header">
+                        <a href="#" class="arrow material-icons" id="closeMobileHeaderMenu" onclick="show()">
+                            arrow_back
+                        </a>
+                        <a href="#" class="cart material-icons">
+                            shopping_cart
+                        </a>
+                    </div>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="header2 accordion__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Product
+                                <span class="material-icons">keyboard_arrow_down</span>
+                            </a>
+                            <ul class="list2 accordion__collapse show" id="collapseOne" aria-labelledby="headingOne">
+                                <li class="item2">
+                                    <a href="#">
+                                        All<sup>24</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Bowl<sup>10</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Cup<sup>8</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Plate<sup>3</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Vase<sup>3</sup>
+                                    </a>
+                                </li>
+                                <li class="item2__hr"></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="header2">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="header2">
+                                Contact
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <ul class="desktop__menu d-lg-flex">
+                <li class="item item--active" id="pageProduct">
+                    <a href="#">Product</a>
+                </li>
+                <li class="item" id="pageBlog">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="item" id="pageContact">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="material-icons">shopping_cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product__nav">
+            <div class="container">
+                <ul class="list">
+                    <li class="item item--active">
+                        <a href="#">
+                            All<sup>24</sup>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Bowl<sup>10</sup>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Cup<sup>8</sup>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Plate<sup>3</sup>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Vase<sup>3</sup>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product__productList container">
+            <div class="card-columns">
+                <div class="card">
+                    <a href="detail.html">
+                        <div class="img bgimg img--Ymd" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ysm" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ylg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ylg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ymd" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ysm" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ysm" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <div class="img bgimg img--Ylg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card d-none d-lg-block">
+                    <a href="#">
+                        <div class="img bgimg img--Ymd" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);" alt="img1">
+                            <span class="remark">
+                                On Sale
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="title">Tatami Cup</div>
+                            <div class="price">NT$1,080
+                                <span class="price__original">NT$1,200</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li class="item active">
+                    <a href="#">1</a>
+                </li>
+                <li class="item">
+                    <a href="#">2</a>
+                </li>
+                <li class="item">
+                    <a href="#">3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="layout notIndex">
+        <div class="layout__subscribe">
+            <div class="img bgimg" style="background-image: url(./images/tom-crew-uDF1mW7EUwM-unsplash.jpg);"></div>
+            <div class="content container">
+                <div class="row">
+                    <div class="title col-lg-5">Subscribe for news and special offers!</div>
+                </div>
+                <div class="row">
+                    <div class="subscribe col-lg-5 input-group">
+                        <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="subscribe">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout__footer">
+            <div class="container">
+                <div class="logo">Craftsman</div>
+                <div class="copyright">© 2020. All Rights Reserved.</div>
+                <ul class="footer__link">
+                    <li class="item">
+                        <a href="#">
+                            Purchase Policy
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- jq -->
+    <script src="./js/all.js"></script>    
+</body>
+</html>

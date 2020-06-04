@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout2</title>
+
+    <!-- icon cdn-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/all.css">
+</head>
+<body>
+    <div class="checkout2">
+        <div class="container">
+            <div class="row flex-column flex-lg-row justify-content-lg-center">
+                    <div class="header col col-lg-10 order-lg-1">
+                        <a href="index.html" class="logo">Craftsman</a>
+                    </div>
+                    <div class="productDetail col col-lg-4 order-lg-4 align-self-start">
+                        <div class="detail">
+                            <div class="accordion" id="accordion">
+                                <div class="accordion__header" id="accordion__header">
+                                    <a class="btn btn-link btn-block" data-toggle="collapse" data-target="#accordion__body" aria-expanded="true" aria-controls="accordion__body">
+                                        <span class="text">Order Summary</span>
+                                        <span class="textRight">
+                                            <span class="price">NT$4,760</span>
+                                            <span class="material-icons">keyboard_arrow_up</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="accordion__body" class="accordion__body collapse show" aria-labelledby="accordion__header" data-parent="#accordion">
+                                    <ul class="detail__product">
+                                        <li class="item">
+                                            <div class="img bgimg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);"></div>
+                                            <div class="title"><b>Tatami Cup</b> ×1</div>
+                                            <div class="price">NT$1,080</div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="img bgimg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);"></div>
+                                            <div class="title"><b>Baifan Bowl</b> ×2</div>
+                                            <div class="price">NT$3,600</div>
+                                        </li>
+                                    </ul>
+                                    <ul class="detail__fee">
+                                        <li class="item">
+                                            <span class="text">Subtotal</span>
+                                            <span class="price">NT$4,680</span>
+                                        </li>
+                                        <li class="item">
+                                            <span class="text">Shipping</span>
+                                            <span class="price">NT$80</span>
+                                        </li>
+                                    </ul>
+                                    <div class="detail__total">
+                                        <span class="text">Total</span>
+                                        <div class="price">NT$4,760</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crumb col col-lg-10 order-lg-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="detail.html">Cart</a></li>
+                                <li class="breadcrumb-item"><a href="checkout1.html">Information</a></li>
+                                <li class="breadcrumb-item active">Payment</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <form class="form col col-lg-6 order-lg-3">
+                        <label class="label">Information</label>
+                        <div class="accordion" id="form__accordion1">
+                            <div class="accordion__header" id="form__accordion1__header">
+                                <a class="btn btn-link btn-block" data-toggle="collapse" data-target="#form__accordion1__body" aria-expanded="true" aria-controls="form__accordion1__body">
+                                    <div class="text">Contact</div>
+                                    <div class="remark text-truncate">Joanne@mail.com +886 912-345-678</div>
+                                    <div class="material-icons">keyboard_arrow_up</div>
+                                </a>
+                            </div>
+                            <div id="form__accordion1__body" class="accordion__body collapse show" aria-labelledby="form__accordion1__header" data-parent="#form__accordion1">
+                                <div class="text">
+                                    Joanne Lin <br>
+                                    Joanne@mail.com <br>
+                                    +886 912-345-678
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion" id="form__accordion2">
+                            <div class="accordion__header" id="form__accordion2__header">
+                                <a class="btn btn-link btn-block" data-toggle="collapse" data-target="#form__accordion2__body" aria-expanded="true" aria-controls="form__accordion2__body">
+                                    <div class="text">Ship to</div>
+                                    <div class="remark text-truncate">3F., No. 2, Ln. 1, Hello 2nd Rd., Woohoo Dist., Kaohsiung City 806, Taiwan</div>
+                                    <div class="material-icons">keyboard_arrow_up</div>
+                                </a>
+                            </div>
+                            <div id="form__accordion2__body" class="accordion__body collapse show" aria-labelledby="form__accordion2__header" data-parent="#form__accordion2">
+                                <div class="text">
+                                    3F., No. 2, Ln. 1, Hello 2nd Rd., <br>
+                                    Woohoo Dist., Kaohsiung City 806, <br>
+                                    Taiwan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Credit Card</label>
+                            <input class="input input__cardNum" type="text" class="form-control" id="cardNum" placeholder="Card Number">
+                            <input class="input input__cardName" type="text" class="form-control" id="cardName" placeholder="Name on Card">
+                            <input class="input input__cardDate" type="text" class="form-control" id="cardDate" placeholder="Expiration date (MM / YY)">
+                            <input class="input input__cardCode" type="text" class="form-control" id="cardCode" placeholder="Security code">
+                        </div>
+                        <div class="form__footer">
+                            <a href="checkout3.html" class="btn btn-primary">Pay now</a>
+                            <a href="checkout1.html" class="returnToCart"><span class="material-icons">keyboard_arrow_left</span>Return to information</a>
+                        </div>
+                        <hr>
+                    </form>
+                    <div class="footer col col-lg-10 order-lg-5">
+                        <ul class="policy list">
+                            <li class="item">
+                                <a href="#">Purchase Policy</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- jq -->
+    <script src="./js/all.js"></script>
+
+</body>
+</html>

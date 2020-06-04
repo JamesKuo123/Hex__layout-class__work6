@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detail</title>
+
+    <!-- icon cdn-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/all.css">
+</head>
+<body>
+    <div class="layout notIndex">
+        <div class="layout__header container">
+            <a href="#" class="mobile__hamburger d-lg-none material-icons" id="openMobileHeaderMenu" onclick="hamburgerShow()">
+                menu
+            </a>
+            <h1 class="logo">
+                <a href="index.html">
+                    CRAFTsMAN
+                </a>
+            </h1>
+            <a href="#" class="mobile__cart d-lg-none material-icons" data-toggle="modal" data-target="#cart">
+                shopping_cart
+            </a>
+            <div class="mobile__headerMenu d-lg-none" id="mobileHeaderMenu">
+                <div class="container">
+                    <div class="header">
+                        <a href="#" class="arrow material-icons" id="closeMobileHeaderMenu" onclick="hamburgerShow()">
+                            arrow_back
+                        </a>
+                        <a href="#" class="cart material-icons">
+                            shopping_cart
+                        </a>
+                    </div>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="header2 accordion__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Product
+                                <span class="material-icons">keyboard_arrow_down</span>
+                            </a>
+                            <ul class="list2 accordion__collapse show" id="collapseOne" aria-labelledby="headingOne">
+                                <li class="item2">
+                                    <a href="#">
+                                        All<sup>24</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Bowl<sup>10</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Cup<sup>8</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Plate<sup>3</sup>
+                                    </a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">
+                                        Vase<sup>3</sup>
+                                    </a>
+                                </li>
+                                <li class="item2__hr"></li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="header2">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="header2">
+                                Contact
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <ul class="desktop__menu d-lg-flex">
+                <li class="item item--active" id="pageProduct">
+                    <a href="#">Product</a>
+                </li>
+                <li class="item" id="pageBlog">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="item" id="pageContact">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="item">
+                    <a href="#" class="material-icons" data-toggle="modal" data-target="#cart">shopping_cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="detail">
+        <div class="detail__product">
+            <div class="imgContainer container">
+                <div class="row">
+                    <div class="img bgimg col-lg-8" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);">
+                    <span class="remark">On Sale</span></div>
+                </div>
+            </div>
+            <div class="infoContainer container">
+                <div class="row flex-lg-end">
+                    <div class="info col-lg-5">
+                        <div class="remark">Home / Product / Cup</div>
+                        <div class="title">Tatami Cup</div>
+                        <div class="price">
+                            <div class="price__original">NT$1,200</div>
+                            <div class="price__main">NT$1,080</div>
+                        </div>
+                        <ul class="quantity">
+                            <li class="item">
+                                <a href="#" class="material-icons">remove</a>
+                            </li>
+                            <li class="item">
+                                <div class="number">1</div>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="material-icons">add</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="addCart btn btn-primary" data-toggle="modal" data-target="#cart">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="descriptionContainer container">
+                <div class="row">
+                    <div class="description col-lg-5">
+                        This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.
+                    </div>
+                    <div class="remark col-lg-3">
+                        Made in Taiwan <br>
+                        8 x 8 x 6 cm <br>
+                        Dishwasher and Microwave-safe
+                    </div>
+                </div>
+            </div>
+            <div class="recommend">
+                <div class="container">
+                    <div class="title">You might also like…</div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="item col-lg-4">
+                            <a href="#">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);">
+                                    <div class="img__remark">On Sale</div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Tatami Cup</div>
+                                    <div class="price">NT$1,080
+                                        <span class="price__original">
+                                            NT$1,200
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item col-lg-4">
+                            <a href="#">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-7HuTGlUfQSo-unsplash.jpg);">
+                                    <div class="img__remark"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Couple Collection</div>
+                                    <div class="price">NT$2,800
+                                        <span class="price__original">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item col-lg-4">
+                            <a href="#">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-8_ldgq801cE-unsplash.jpg);">
+                                    <div class="img__remark"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Brotherhood Vase</div>
+                                    <div class="price">NT$4,800
+                                        <span class="price__original">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item col-lg-4">
+                            <a href="#">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);">
+                                    <div class="img__remark">On Sale</div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Tatami Cup</div>
+                                    <div class="price">NT$1,080
+                                        <span class="price__original">
+                                            NT$1,200
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item col-lg-4">
+                            <a href="#">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-7HuTGlUfQSo-unsplash.jpg);">
+                                    <div class="img__remark"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Couple Collection</div>
+                                    <div class="price">NT$2,800
+                                        <span class="price__original">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item col-lg-4">
+                            <a href="#">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-8_ldgq801cE-unsplash.jpg);">
+                                    <div class="img__remark"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Brotherhood Vase</div>
+                                    <div class="price">NT$4,800
+                                        <span class="price__original">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <!-- Modal -->
+        <div class="modal" id="cart" tabindex="-1" role="dialog" aria-labelledby="cart" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Cart List<sup>3</sup>
+                        </h5>
+                        <a href="#" class="closeBtn material-icons" data-dismiss="modal" aria-label="Close">close</a>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list">
+                            <li class="item">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);"></div>
+                                <div class="item__main">
+                                    <div class="title">Tatami Cup</div>
+                                    <div class="price">NT$1,080
+                                        <span class="price__original">NT$1,200</span>
+                                    </div>
+                                    <div class="quantity">
+                                        <a href="#" class="minus material-icons">remove</a>
+                                        <span class="quantity__number">1</span>
+                                        <a href="#" class="plus material-icons">add</a>
+                                    </div>
+                                    <div class="value">NT$1,080</div>
+                                    <a href="#" class="delete material-icons">close</a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="img bgimg" style="background-image: url(./images/tom-crew-XtyxEBiA8D8-unsplash.jpg);"></div>
+                                <div class="item__main">
+                                    <div class="title">Tatami Cup</div>
+                                    <div class="price">NT$1,080
+                                        <span class="price__original">NT$1,200</span>
+                                    </div>
+                                    <div class="quantity">
+                                        <a href="#" class="minus material-icons">remove</a>
+                                        <span class="quantity__number">1</span>
+                                        <a href="#" class="plus material-icons">add</a>
+                                    </div>
+                                    <div class="value">NT$1,080</div>
+                                    <a href="#" class="delete material-icons">close</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="conclusion">
+                            <div class="subtotal subtitle">
+                                <span class="text">Subtotal</span>
+                                <span class="price">NT$4,680</span>
+                            </div>
+                            <div class="shipping subtitle">
+                                <span class="text">Shipping</span>
+                                <span class="price">NT$80</span>
+                            </div>
+                            <div class="total title">
+                                <span class="text">Total</span>
+                                <span class="price">NT$4,760</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="checkout1.html" class="btn btn-primary">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="layout notIndex">
+        <div class="layout__subscribe">
+            <div class="img bgimg" style="background-image: url(./images/tom-crew-uDF1mW7EUwM-unsplash.jpg);"></div>
+            <div class="content container">
+                <div class="row">
+                    <div class="title col-lg-5">Subscribe for news and special offers!</div>
+                </div>
+                <div class="row">
+                    <div class="subscribe col-lg-5 input-group">
+                        <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="subscribe">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout__footer">
+            <div class="container">
+                <div class="logo">Craftsman</div>
+                <div class="copyright">© 2020. All Rights Reserved.</div>
+                <ul class="footer__link">
+                    <li class="item">
+                        <a href="#">
+                            Purchase Policy
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- jq -->
+    <script src="./js/all.js"></script>
+
+</body>
+</html>
